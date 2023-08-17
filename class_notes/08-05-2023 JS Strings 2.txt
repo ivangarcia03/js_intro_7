@@ -1,0 +1,122 @@
+
+
+08-05-2023 JS Strings
+
+RECAP:
+String: it is one the data types (primitive-object)
+
+let name1 = "John"; // primitive
+let name2 = new String("John"); // object
+
+name1 == name2  // true
+name1 === name2  // false
+
+name1 != name2  // false
+name1 !== name2 // true
+
+-Anything in double or single quotes known strings 
+-A sequence of characters (empty, one or multiple characters)
+"", " ", "1", "Hello", '123', '!@#'
+
+Template Literals - String Templates
+-backticks (ES6)
+-it allows us to embed some variables or expression into a String
+-it makes concatenation more professional and easier
+
+let yearOfBirth = 1992;
+let name = "John";
+
+`${name} is ${2023 - yearOfBirth} years old.` // John is 31 years old.          Interpolation
+name + " is " + (2023 - yearOfBirth) + " years old." // John is 31 years old.   Concatenation
+
+
+String functions: manipulates (update, modify, change, or more actions) the data stored in a string variable.
+
+let word = "enjoy"; // JOY
+
+length property: it gives us back how many characters you have in the string
+word.length; // 5 
+
+
+Changing cases:
+toLowerCase()
+toUpperCase()
+
+word.toUpperCase(); // ENJOY
+
+TASK:
+RETURN:
+DATA TYPE:
+
+
+Extracting characters:
+-Accessing with property [];
+
+let city = "Miami";
+city[1]; // i 
+city[7]; // undefined
+
+
+-charAt()
+city.charAt(1); // i 
+city.charAt(7); // empty string
+
+
+-charCodeAt()
+city.charCodeAt(2); // 97
+
+
+HOW TO GET FIRST AND LAST CHARACTERS FROM A STRING? 
+let word1 = "JavaScript", word2 = "Ruby";
+
+word1[0]; // "J"
+word2[0]; // "R"
+
+word1[word1.length - 1]; // "t"
+word2[word2.length - 1]; // "y"
+
+let greeting = "Hello";
+greeting[0]; // "H"
+greeting[greeting.length - 1]; // "o"
+
+
+Searching in string
+-search() searches a string in another and returns the position of first occurrence.
+
+"abcdabxya".search("a"); // 0
+"abcdabxya".search("cd"); // 2
+"abcdabxya".search("bcde"); // -1 (NOT FOUND)
+"abcdabxya".search(" "); // -1
+"abcdabxya".search("A"); // -1
+"abcdabxya".toUpperCase().search("B"); // 1
+"abcdabxya".search(""); // 0
+
+
+-includes() checks if one string contains another string
+"Hello World".includes("Hello"); // true 
+"Hello World".includes(" "); // true
+"Hello World".includes("l"); // true
+
+
+indexOf() vs lastIndexOf()
+indexOf() 
+TASK: Returns the position of the first occurrence of a substring.
+RETURN: returns the position
+DATA TYPE: number
+
+
+lastIndexOf()
+TASK: Returns the position of the last occurrence of a substring.
+RETURN: returns the position
+DATA TYPE: number
+
+// Extracting Sub-strings from strings
+"Hello" -> "He" 
+"Hello World" -> "Hello"
+"I like JS" -> "like"
+
+
+slice() vs substring()
+-These 2 methods are used for Extracting substrings from another string.
+-Difference: slice() does accept negative indexes and will try Extracting a substring backward
+             substring() sees negative numbers as zero

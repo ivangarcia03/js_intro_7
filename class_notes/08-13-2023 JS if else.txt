@@ -1,0 +1,13 @@
+
+
+
+08-13-2023 JS if else - checking characters
+
+charCodeAt() -> returing ASCII decimal representation of characters
+
+0-127
+
+32 means the character is space
+48 - 57 (both inclusive) means the character is digit [0-9]
+65 - 90 (both inclusive) means the character is uppercase letter [A-Z]
+97 - 122 (both inclusive) means the character is lowercase letter [a-z]

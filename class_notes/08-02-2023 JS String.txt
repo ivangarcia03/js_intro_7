@@ -1,0 +1,117 @@
+
+
+08-02-2023 JS Strings
+
+-It is a sequence of characters stored in double or single quotes
+
+let str1 = '';
+let str2 = "";
+
+EXAMPLES/ "TechGlobal", "Hello", "abc", '123'
+
+
+I 
+can 
+do 
+it
+
+
+{} -> curly braces
+() -> parantheses
+[] -> square brackets
+
+;  -> semi-colon
+:  -> colon 
+,  -> coma
+.  -> dot-period
+`  -> backtick
+'  -> single quote 
+"  -> double quote
+^  -> carat 
+~  -> tilde  
+
+
+Primitive vs Object
+Primitives: basic data types - allocates less memory - fast to use
+NOTE: Primitives have a limited capacity to store data and that is why we use objects.
+
+Objects: complex data types - allocates more memory - slower
+
+
+
+Property vs function
+-function takes ()
+
+
+Make sure you understand what property or the function you used returns and what is the return data type.
+What is does? TASK 
+What it returns? result-value
+What is the return data type? result-data type
+
+
+function = method = behavior
+
+
+Mutable: can be changed
+Immutable: cannot be changed
+
+Strings are immutable data types.
+
+toLowerCase()
+TASK: converts all uppercase letters to lowercases
+RETURN: string back lowercased
+DATA TYPE: string
+
+toUpperCase()
+TASK: converts all the lowercase letters to uppercase
+RETURN: string back uppercased
+DATA TYPE: string
+
+
+RAMEZ
+R = 0
+A = 1
+M = 2
+E = 3
+Z = 4
+
+
+Property access with [] 
+TASK: returns the characters at the given index
+RETURN: one character at the given index
+DATA TYPE: string
+
+NOTE: When you have a string with multiple characters;
+The first character will always have index of 0
+The last character will always have index of length-1
+If you try to use an index that is out of the range 0 and length-1, it returns undefined
+
+charAt() function
+TASK: returns a character at the specified index if exists
+RETURN: one character at the given index
+DATA TYPE: string
+
+NOTE: When you have a string with multiple characters;
+The first character will always have index of 0
+The last character will always have index of length-1
+If you try to use an index that is out of the range 0 and length-1, it returns empty string
+
+
+charCodeAt() function
+TASK: returns Unicode representation of the characer at the specified index 
+RETURN: Unicode representation
+DATA TYPE: number
+
+
+search() function
+TASK: searches a string for another string (or a regular expression) and returns the position of the match.
+RETURN: returns the index of first match
+DATA TYPE: number
+
+NOTE: if the substring you are searching for does not exist in the original string, then you will get -1.
+
+
+includes() function
+TASK: searches a string for another string and returns true or false
+RETURN: returns true if substring is found or false if it is not found
+DATA TYPE: boolean

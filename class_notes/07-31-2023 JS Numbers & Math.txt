@@ -1,0 +1,45 @@
+
+
+
+07-31-2023 JS Numbers & Math Object
+
+
+other languages (compiled): byte, short, long, int, float, double, BigInteger
+JS: Numbers
+
+let num = 1.5; 
+let num2 = 10; 
+
+-It is accurate up to 15-16 precision
+-BigInt data type is used for larger number
+
+"2" * 5     => 10
+"10" / "2"  => 5
+"abc" * "Hello"     => NaN -> Not a Number
+
+
+Number functions
+toPrecision(2)  -> you want to see 2 digits regardless of decimal part
+toFixed(2)      -> you want to see 2 digits for the decimal part
+
+
+-9007199254740991 to 9007199254740991 -> any number between these is a safe integer and can be stored as a number
+Anything less than -9007199254740991 or more than  9007199254740991 is not safe integer and can be stored as a bigint
+
+isInteger() vs isSafeInteger()
+
+Example                             Integer             Safe Integer
+25                                  true                true                
+5873465834765837465837465837465     true                false
+
+
+
+Multiply all of them with 10
+1.8441017365386836
+4.121499796883552
+9.809897828766787
+9.802414664625301
+3.1365124210479567
+
+0 and 1         0       0.99
+1 and 10        1       10

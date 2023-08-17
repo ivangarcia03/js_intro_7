@@ -1,0 +1,106 @@
+
+
+08-09-2023 JS if else
+-it works around a condition which is either or false
+-we can have if without any else part
+-we cannot use else without if statement
+
+if(condition){
+    // this block will be executed if the condition true
+}
+else{
+    // this block will be executed if the condition false
+}
+
+
+let num = 1-100;
+
+if(num <= 50) {
+    console.log("this number is in the first half");
+}
+else {
+    console.log("this number is in the second half");
+}
+
+
+let num = -5 and 5;
+
+if(num > 0){
+    console.log("this number is positive);
+}
+else if(num < 0){
+     console.log("this number is negative);
+}
+else{
+     console.log("this number is ZERO);
+}
+
+
+let time = ___;
+
+if(time > 6:00 AM && time < 10:00 AM){
+    // Good Morning
+}
+else if(time >= 10:00 AM && time < 4:00 PM){
+    // Good Afternoon
+}
+else if(time >= 4:00 PM && time < 9:00 PM){
+    // Good Evening
+}
+else{
+    // Good Night!
+}
+
+
+
+if(condition){
+    //if block
+}
+else{
+    // else block
+}
+
+//some other code
+
+
+1 point
+
+
+random number between 1 100 (both inclusive)
+
+even -> 2 * points 
+divided 10 -> 3 * points 
+7 -> points * 7
+
+
+3   -> 1
+10  -> 6
+
+7   -> 7
+
+
+if(phone.isCorrect() || email.isCorrect()){
+    // ask password
+    if(password.isCorrect()){
+        // LOGIN
+    }
+    else{
+        // Incorrect password
+    }
+}
+else{
+    // Incorrect phone number
+}
+
+
+if(username.isCorrect() && password.isCorrect()){
+    // LOGIN
+}
+else {
+    if(username.isCorrect()){
+        // Password is incorrect
+    }
+    else{
+        // Username is incorrect
+    }
+}

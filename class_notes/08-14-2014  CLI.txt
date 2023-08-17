@@ -1,0 +1,67 @@
+
+
+08-14-2023 CLI
+CLI: Command Line Interface
+MAC-> Terminal
+Windows -> Command Prompt, Powershell
+
+Computer = machine = workspace = PC = laptop = local
+
+directory = folder = location = repository
+
+PATH = location of a directory
+Home directory?
+    WINDOWS -> C:\Users\{username}\
+    MAC -> /Users/{username}
+
+Root directory?
+    WINDOWS -> C:\
+    MAC -> /
+
+
+cd = change directory
+
+MAC:
+pwd     -> where I am = current folder/path/location
+ls      -> what I have in this folder/path/location - list items
+ls -a   -> what I have in this folder/path/location - list items including hidden ones
+cd {directoryName} -> navigate to specified directory/folder
+clear   -> clears the terminal 
+mkdir {directoryName}  -> creates a new directory/folder with the specified name
+rmdir  {directoryName} -> removes the specified folder/directory  
+cd ..   -> move one step back (parent folder/directory)
+cd ~    -> move to HOME directory
+cd /    -> move to ROOT directory
+rm -rf {directoryName} -> removes the non-empty folder/directory
+touch {fileName}    -> creates an empty file
+echo {content} > {fileName} -> creates file with the content
+rm {fileName}    -> removes the specified file
+
+
+WINDOWS:
+cd      -> where I am = current folder/path/location
+dir     -> what I have in this folder/path/location - list items
+cd {directoryName} -> navigate to specified directory/folder
+cls     -> clears the cmd or shell
+mkdir {directoryName}  -> creates a new directory/folder with the specified name
+rmdir  {directoryName} -> removes the specified folder/directory 
+rd {directoryName}     -> removes the specified folder/directory  
+cd ..   -> move one step back (parent folder/directory)
+cd %userprofile%    -> move to HOME directory
+cd /    -> move to ROOT directory
+rmdir /s {directoryName} -> removes the non-empty folder/directory with permission (Y/N)
+rmdir /s /q {directoryName} -> removes the non-empty folder/directory silent
+echo. > {fileName}  -> -> creates an empty file
+echo {content} > {fileName} -> creates file with the content
+del {fileName}    -> removes the specified file
+
+
+NOTE: If you have your folder name with multiple words use double quotes for the name of the folder when you use rmdir or mkdir
+NOTE: rmdir removes folders that are empty. It won't delete non-empty folders 
+
+
+NOTE: When you create a file starts with period (.), that means it is a hidden file.
+How to reveal hidden files?
+MAC-GUI -> cmd + shift + .
+MAC-CLI -> ls -a
+WINDOWS-GUI -> Go to view and see hidden items is checked

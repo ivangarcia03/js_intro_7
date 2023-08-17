@@ -1,0 +1,129 @@
+
+
+08-12-2023 JS if else
+
+RECAP:
+-control flow 
+-if block can be used wihout else
+-else does not make sense to use without if statement
+-nested if else statement: 
+
+
+if(condition) {
+    
+}
+else {
+    
+}
+
+
+if(condition) {
+
+}
+else if (condition){
+
+}
+else if (condition){
+    
+}
+else if (condition){
+    
+}
+else if (condition){
+    
+}
+else {
+
+}
+
+
+if(condition) {
+    if(condition) {
+    
+    }
+    else {
+        if(condition) {
+    
+        }
+        else {
+            if(condition) {
+    
+            }
+            else {
+                
+            }
+        }
+    }
+}
+else {
+    if(condition) {
+    
+    }
+    else {
+        
+    }
+}
+
+
+
+name[0] === "j" || name[0] === "J"
+name.toLowerCase()[0] === "j"
+name.toUpperCase()[0] === "J"
+name.charAt(0) === "j" || name.charAt(0) === "J"
+name.toLowerCase().charAt(0) === "j"
+name.toUpperCase().charAt(0) === "J"
+name.startsWith("j") || name.startsWith("J")
+name.toLowerCase().startsWith("j")
+name.toUpperCase().startsWith("J")
+name.search("j") === 0 || name.search("J") === 0
+name.indexOf("j") === 0 || name.indexOf("J") === 0
+name.slice(0,1) === "j" || name.slice(0,1) === "J"
+name.substring(0,1) === "j" || name.substring(0,1) === "J"
+
+
+
+SHORT VERSION OF if else
+Below syntax could be used if you will execute only 1 line of code for the if and else blocks
+
+if(condition) // one statement
+else // one statement
+
+
+
+We can simplify below function in a better WAY
+function checkDLAge(age){
+    if(age > 15) return true;
+    return false;
+}
+
+function checkDLAge(age){
+    return age > 15;
+}
+
+
+let num = ;
+
+if(num % 2 === 0) {
+    console.log("EVEN");
+}
+else {
+    console.log("ODD");
+}
+
+if(num % 2 === 0) console.log("EVEN");
+else console.log("ODD");
+
+num % 2 === 0 ? console.log("EVEN") : console.log("ODD");
+
+if(num > 0) console.log("POS);
+else if(num < 0) console.log("NEG");
+else console.log("ZERO");
+
+num > 0 ? console.log("POS) : num < 0 ? console.log("NEG") : console.log("ZERO");
+
+
+SWITCH STATEMENTS: another way of working around conditions 
+
+0 - Sunday
+1 - Monday
+6 - Saturday

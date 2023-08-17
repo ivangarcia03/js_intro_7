@@ -1,0 +1,175 @@
+
+
+
+
+
+07-30-2023 JS Data Types & Operators
+
+RECAP:
+DATA TYPES:
+1. Primitives: string, number, boolean, bigint, null, undefined, symbol
+
+2. Reference types - objects: complex data types
+    Arrays, Data Structures - Collections, Objects and more!!!
+
+
+HOW WE CAN IDENTIFY A TYPE OF DATA?
+typeof operator is used to find the data type 
+
+""                      -> string
+123                     -> number
+2837568237658273658273n -> bigint
+true/false              -> boolean
+undefined               -> undefined
+null                    -> object
+
+
+
+OPERATORS:
+assignment
+arithmetic
+comparison
+logical
+
+
+
+NaN = Not a Number
+
+
+When to create a variable to store data?
+-When you will use result more than one time!!!
+
+
+ASSIGNMENT OPERATOR - SHORTHAND
+=   assignment operator
++=
+-=
+*=
+**=
+/=
+%=
+
+
+
+let number = 10;
+
+// number = number * 5;
+number *= 5;
+
+console.log(number); // 50
+
+
+15 % 16 = 15
+16 % 15 = 1
+
+let balance = 100;
+
+balance -= 3; // ERROR
+
+balance -= 30; // 67
+
+balance += 200; // 267
+
+
+REMAINDER
+5 % 5 = 0
+10 % 5 = 0
+11 % 5 = 1
+4 % 5 = 4
+
+
+EXPONENTIATION
+5 ** 2  => 5 * 5 = 25
+5 ** 3  => 5 * 5 * 5 = 125
+5 ** 4  => 5 * 5 * 5 * 5 = 625
+
+
+
+INCREMENT & DECREMENT OPERATORS
+-These are used to increase or decrease a variable value by 1
+
+post-increment vs pre-increment 
+post-decrement vs pre-decrement
+
+
+let number = 10;
+
+let number2 = number++; // increase this by one but not in this line - next time // 10
+
+console.log(number); // 11
+
+
+
+let a = 5;
+
+++a; // 
+
+console.log(a); // 6
+
+
+variable++; // variable value does not change in this line but it will be increased by1 next time
+variable--; // variable value does not change in this line but it will be decreased by1 next time
+++variable; // variable value increased by 1 and it is new value to be used after that
+--variable; // variable value decreased by 1 and it is new value to be used after that
+
+
+
+COMPARISON OPERATORS
+==      compare ONLY values and return true if they are equal
+===     compare both values and data types and return true if both values and data types are equal
+
+"3" == 3    -> true
+"2" === 2   -> false
+"3" === "3" -> true
+2 === 2     -> true
+5 == 5      -> true
+
+
+
+3 + "5"     -> 35
+
+true    -> 1
+false   -> 0
+null    -> 0
+""      -> 0
+
+
+LOGICAL OPERATORS 
+AND     &&
+OR      ||
+NOT     !
+
+
+3 < 5 && true       -> true
+2 == 2 && 1 > 5     -> false
+
+My age is 30 AND 25     -> false
+My age is 29 OR 30      -> true
+
+
+AND
+true   &&   true    -> true
+false  &&   true    -> false
+true   &&   false   -> false
+false  &&   false   -> false
+
+
+2 < 1 && 1 > 10     -> false
+true && !true       -> false
+true && !false && 2 === "2" -> false
+
+
+OR
+false || false      -> false
+true  || false      -> true
+false || true       -> true
+true  || true       -> true
+
+
+!false || false     -> true
+2 + 5 <= 7 || 5 > 10    -> true
+
+
+NOT
+!(2 == 2 && 5 == "5" && 5 < 10)     -> false
+!false                              -> true

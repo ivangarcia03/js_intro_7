@@ -1,0 +1,84 @@
+
+07-26-2023 JS Output & Variables
+
+RECAP:
+Computer: machine -> input-process-output
+    softwares + hardwares
+
+Binary code: computer language that consists of ones and zeros
+ASCII: Converts letters, digits, texts, symbols, images into ones and zeros
+Source code
+
+
+Programming languages: JavaScript, Java, C, C++, Go
+Source code: it is code that is written with any programming language
+    console.log("Hello World"); // coding statement 
+
+
+COMMENTS:
+// single-line comment
+
+/*
+this is multi-line comments
+This is second line
+*/
+
+How to duplciate line code
+WINDOWS: ALT + SHIFT + down arrow
+MAC: OPTION + SHIFT + down arrow
+
+JavaScript vs Other programming languages
+Interpret: JavaScript: more flexible, less rules
+Compiled: Java, C#, TypeScript -> more rules and lots of exceptions and errors
+
+
+Visual Studio Code: This is a Code Editor commonly used for JS
+Intellij IDEA: This is mostly for Java and Kotlin
+
+These code editors are known as IDE (Integrated Development Environment)
+
+
+Compiler: checks if the source code has any syntax error
+Execution: running code
+
+
+We can put out text in 
+"" double quotes
+'' single quotes
+`` backticks
+
+
+VARIABLES - Declaration vs assignment vs initialization
+let name; // declaration - reserve memory for the name
+name = "John"; // assignment
+
+let age = 25; // initialization
+
+
+= assignment operator
+
+
+
+
+____ data = "value";
+
+
+const pi = 3.14;
+
+const firstMonthOfTheYear = "JANUARY";
+
+
++ OPERATOR 
+when used between strings = concatenation
+Example: "hello" + "abc"    -> helloabc
+         "123" + "12"        -> 12312
+
+when used between numbers = addition
+Example: 12 + 3     -> 15
+         0 + 0.5    -> 0.5
+
+When used between string and number = concatenation
+Example: "John" + 45    -> John45
+
+When used between number and string = concatenation
+Example: 4 + "abc"      -> 4abc

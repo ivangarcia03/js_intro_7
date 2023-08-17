@@ -1,0 +1,51 @@
+
+
+08-15-2023 GIT - GitHub
+
+
+RECAP:
+
+CLI - Command Line Interface
+Command Prompt
+Terminal
+
+Linux commands
+
+MAC
+pwd: Where I am/location/path/directory
+ls: list all the items (not hidden)
+ls -a: list all the items (including hidden)
+cd {directoryName}: navigate to this directory
+mkdir {directoryName}: creates a new directory/folder
+rmdir {directoryName}: removes the given directory (empty)
+rm -rf {directoryName}: removes the given directory (even not empty)
+clear: clears previous tasks
+touch {fileName}: creates a new file
+echo content > {fileName}: creates a new file with default content
+rm {fileName}: removes the given file
+cd .. : move to parent directory (one step back)
+cd / : move to the root directory 
+cd ~ : move to the home directory
+
+WINDOWS
+cd: Where I am/location/path/directory
+dir: list all the items (including hidden)
+cd {directoryName}: navigate to this directory
+mkdir {directoryName}: creates a new directory/folder
+rmdir {directoryName}: removes the given directory (empty)
+rmdir /s /q {directoryName}: removes the given directory (even not empty)
+cls: clears previous tasks
+echo. > {fileName}: creates a new file
+echo content > {fileName}: creates a new file with default content
+del {fileName}: removes the given file
+cd .. : move to parent directory (one step back)
+cd / : move to the root directory 
+cd %userprofile% : move to the home directory
+
+
+GIT vs GitHub
+Git is a version control system
+
+
+Linking a local folder/project to GitHub repository
+git init -> that initialize your project with git

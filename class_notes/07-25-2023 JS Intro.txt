@@ -1,0 +1,65 @@
+
+
+computer:
+A computer is an electronic machine that is used to imput, process and then output datatypically in binary form, according to intructions given to it in a variable program.
+
+
+Software: Operatings systems, Microsoft office suite, Paint
+Hardware: Mouse, screen, printer, hard-disk, computer
+
+
+
+Binary code: ones and zeros
+-Known as base-2 number systems
+1:one
+0:OFF
+
+-it is the machine language what computer understands
+-All the letters, digits, shapes and more are converted to binary code to be understood and process by computer
+
+
+
+-machine
+-input
+-output
+-code
+-data
+-binary code
+
+
+Binary units:
+Bit: one or zero
+byte: 8 bits
+Kilobyte: 1024 bytes
+
+
+
+
+
+MAC: cmd-> command
+Windows: CTRL-> control
+
+CAT != cat != cat != CAt
+
+
+
+Programing language:- A programing language is a vocabulary and set of grammatical rules for instructing a computer or computing device to perform specific tasks.
+
+-you can create apps
+-comunicate with the machine
+-has rules (SYNTAX)
+-Examples: JavaScript, Jave, Go, Phyton, C#
+
+
+Interpreted languages: JavaScript
+compiled languages: lack ambiguity - confusion - conflict 
+
+
+compilation - compile - compiler -> checking if your code is grammatically correct
+execution - excute -executor     ->  running the code
+
+
+INSTALL node.js and check the version
+1. Download it from https://nodejs.org/en/download
+
+

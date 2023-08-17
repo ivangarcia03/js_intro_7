@@ -1,0 +1,122 @@
+
+
+08-06-2023 JS Strings
+
+-Getting the length of a string
+-Changing cases (uppercase or lowercase)
+-Extracting characters
+-Extracting substrings
+-Searching
+-Trimming
+-Padding
+-Replacing
+-Checking if it starts with a substring, ends with a substring
+
+
+EXTRACTING 1 or MULTIPLE CHARACTERS 
+1 character -> [] or charAt()
+More characters -> slice() or substring()
+
+"JavaScript".toUpperCase()  -> 
+JAVASCRIPT 
+
+
+
+console.log(
+s1.includes("a") || 
+s1.includes("e") || 
+s1.includes("o") || 
+s1.includes("u") || 
+s1.includes("i") ||
+s1.includes("A") ||
+s1.includes("E") ||
+s1.includes("O") ||
+s1.includes("U") ||
+s1.includes("I")
+);
+
+console.log(
+s1.toLowerCase().includes("a") || 
+s1.toLowerCase().includes("e") || 
+s1.toLowerCase().includes("o") || 
+s1.toLowerCase().includes("u") || 
+s1.toLowerCase().includes("i") 
+);
+
+console.log(
+s1.toUpperCase().includes("A") || 
+s1.toUpperCase().includes("E") || 
+s1.toUpperCase().includes("O") || 
+s1.toUpperCase().includes("U") || 
+s1.toUpperCase().includes("I") 
+);
+
+
+
+
+HOW TO EXTRACT THE MIDDLE CHARACTER FROM A STRING WITH ODD LENGTH - use property access
+string          length          middle index            formula
+Yazan           5               2                       (s.length-1) / 2
+Viktoriya       9               4                       (s.length-1) / 2
+abc             3               1                       (s.length-1) / 2
+x               1               0                       (s.length-1) / 2
+ 
+
+
+HOW TO EXTRACT THE MIDDLE 2 CHARACTERS FROM A STRING WITH EVEN LENGTH - use slice() function
+string          length          middle indexes            formula
+"abcd"          4               slice(1, 3)               slice(s.length/2 - 1, s.length/2 + 1)
+"toyota"        6               slice(2, 4)               slice(s.length/2 - 1, s.length/2 + 1)
+"Portugal"      8               slice(3, 5)               slice(s.length/2 - 1, s.length/2 + 1)
+"JavaScript"    10              slice(4, 6)               slice(s.length/2 - 1, s.length/2 + 1)
+""              0                                         slice(s.length/2 - 1, s.length/2 + 1)
+"ab"            2                                         slice(s.length/2 - 1, s.length/2 + 1)
+
+
+HOW TO EXTRACT THE FIRST and LAST 2 CHARACTERS FROM A STRING WITH ANY LENGTH - use slice() function
+string          length          first-2         formula
+"abcd"          4               slice(0, 2)     
+"toyota"        6               slice(0, 2)
+"Portugal"      8               slice(0, 2)
+
+
+string          length          last-2         formula
+"abcd"          4               slice(2)       s.slice(s.length-2)
+"toyota"        6               slice(4)       s.slice(s.length-2)
+"Portugal"      8               slice(6)       s.slice(s.length-2)
+
+
+string          length          middles         formula
+"abcd"          4               
+"toyota"        6               slice(2, 4)     s.slice(2, s.length-2)
+"Portugal"      8               slice(2, 6)     s.slice(2, s.length-2)
+
+
+
+HOW TO EXTRACT MIDDLE CHARACTERS FROM A STRING WITHOUT THEIR FIRST AND LAST CHARACTER 
+string          length          middles         formula
+"1234"          4               slice(1, 3)     s.slice(1, s.length-1)
+"Green"         5               slice(1, 4)     s.slice(1, s.length-1)
+"Yellow"        6               slice(1, 5)     s.slice(1, s.length-1)
+
+
+HOW TO EXTRACT THE FIRST-LAST WORD FROM A STRING
+string                          first-word      formula                     last word       formula
+"I like Apple"                  I               s.slice(0, s.indexOf(" "))  Apple           s.slice(s.lastIndexOf(" ")+1)
+"JavaScript is nice to learn"   JavaScript      s.slice(0, s.indexOf(" "))  learn           s.slice(s.lastIndexOf(" ")+1)
+
+
+
+s.slice(s.lastIndexOf(" ")+1) + s.slice(s.indexOf(" "), s.lastIndexOf(" ") + 1) + s.slice(0, s.indexOf(" "))
+
+
+HOW TO COUNT WORDS IN A STRING 
+string                  spaces              words
+"Today is Sunday"       2                   3
+"I like 1 and 0"        4                   5
+
+
+words = spaces + 1
+
+15 - 13 = 2
+s.length - s.replaceAll(" ", "").length + 1

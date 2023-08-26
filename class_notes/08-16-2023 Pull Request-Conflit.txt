@@ -1,0 +1,18 @@
+
+
+08-16-2023 Pull Request - Conflict
+
+GIT BRANCHING
+Allows developing different code on the same base.
+Makes it easy to work together and collaborate with team members.
+
+git branch 			            -> list the existing branches.
+git branch <branch-name>		-> create a new branch with the specified name.
+git checkout <branch-name> 		-> switch to the specified branch
+git checkout -b <branch-name> 	-> create and switch to the created branch.
+git branch –d <branch-name> 	-> delete the specified branch.
+
+
+STASHING CHANGES
+git stash -> stores your changes somewhere
+git stash apply -> applies your changes back to your branch

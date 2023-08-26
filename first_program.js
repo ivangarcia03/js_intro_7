@@ -18,3 +18,21 @@ console.log("abc\\\\xyz"); // abc\\xyz
 
 console.log("Hello\nWorld!");
 console.log("\tHello World!"); // "     Hello World!"
+
+
+function startsVowel(str){
+    if (str.toLowerCase().startsWith("a") ||
+    str.toLowerCase().startsWith("e") ||
+    str.toLowerCase().startsWith("i") ||
+    str.toLowerCase().startsWith("o") ||
+    str.toLowerCase().startsWith("u")){
+         return  true 
+    }
+    else{
+         return false 
+}
+}
+
+console.log(startsVowel("Tech"));
+console.log(startsVowel("Aech"));
+console.log(startsVowel("aech"));

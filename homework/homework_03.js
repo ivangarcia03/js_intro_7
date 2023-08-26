@@ -37,20 +37,17 @@ console.log(hasA("Apple"));
 
 // Task 4
 
-function doubleOrTripleWorld(arg1){
-    if (arg1.length % 2 === 0){
-        return arg1 + arg1 + arg1
-    }
-    else {(arg1.length % 2 !== 0)
-        return arg1 + arg1
-        }
-   }
-   console.log (doubleOrTripleWorld("Tech"));
-   console.log (doubleOrTripleWorld("Apple"));
-   console.log (doubleOrTripleWorld(""));
-   console.log (doubleOrTripleWorld(" "));
-   console.log (doubleOrTripleWorld("1"));
-   console.log (doubleOrTripleWorld("22"));
+
+
+
+
+
+
+
+
+
+
+
 
 
    // Task 5

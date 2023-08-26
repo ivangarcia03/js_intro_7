@@ -1,0 +1,64 @@
+
+
+08-22-2023 Arrays Introduction & Loops
+
+RECAP:
+-Collection of elements/values
+
+const array_name = [item1, item2, ...];
+
+array_name.length; // size of the array - how many elements in the array
+
+console.log(array_name); // outputs the array to the console 
+
+array_name[0]; // First element
+array_name[array_name.length - 1]; // Last element
+
+
+Adding and removing elements
+const students = [];
+
+students.push('Alex'); // returns the new size - 1
+console.log(students); // [ 'Alex' ]
+
+students.pop(); // returns the removed element - 'Alex'
+
+
+
+Searching in an array
+const numbers = [5, 6, 8, 5];
+
+console.log(numbers.indexOf(6)); // 1
+console.log(numbers.indexOf(5)); // 0
+console.log(numbers.lastIndexOf(5)); // 3
+
+console.log(numbers.indexOf(10)); // -1
+console.log(numbers.lastIndexOf(10)); // -1
+
+console.log(numbers.includes(7)); // false
+console.log(numbers.includes(5)); // true
+
+
+Shifting and Unshifting elements
+const cars = [ 'BMW', 'Mercedes', 'Tesla' ];
+
+cars.unshift('Toyota'); // new size - 4
+
+console.log(cars); // [ 'Toyota', 'BMW', 'Mercedes', 'Tesla' ]
+
+cars.unshift('Honda', 'Kia'); // 6
+console.log(cars); // [ 'Honda', 'Kia', 'Toyota', 'BMW', 'Mercedes', 'Tesla' ]
+
+cars.shift(); // returns the removed element - Honda
+console.log(cars); // [ 'Kia', 'Toyota', 'BMW', 'Mercedes', 'Tesla' ]
+
+const newArr = [];
+newArr.pop();
+
+
+(element) => element > 45;
+
+Write function that takes a number as an element and returns true if the number is more than 45, false otherwise
+function (element) => {
+    return element > 45;
+}

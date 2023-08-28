@@ -1,0 +1,191 @@
+
+
+08-27-2023 JS Loops-Arrays
+
+RECAP:
+-Loops are used to execute a block of repeatedly.
+-Saves us time and effort and reduces the duplication of codes.
+
+iteration: each time that loop executes
+
+1. for loop
+-This is also known for (i) loop
+
+for(initialization; termination; update){
+    // code to execute
+}
+
+for(let i = 1; i <= 10; i++){
+    console.log(i);
+}
+
+let name = 'John';
+name[0]
+name[1]
+..
+name[3]
+
+
+for(let i = 0; i < name.length; i++){
+    console.log(name[i]);
+}
+
+
+const myGarage = ['BMW', 'Tesla', 'Toyota'];
+myGarage[0]
+myGarage[1]
+myGarage[2]
+
+for(let i = 0; i < myGarage.length; i++){
+    console.log(myGarage[i]);
+}
+
+// Count cars that starts with T 
+let countT = 0;
+
+for(let i = 0; i < myGarage.length; i++){
+    if( myGarage[i].startsWith('T') ) countT++;
+}
+
+console.log(`The count of cars thats starts with letter 'T' is ${countT}`);
+
+
+2. while loop
+-Check the condition first, and execute the block while the condition is true
+while(condition){
+    // execute this block
+}
+
+
+3. do while loop
+-Execute the block once, then check the condition. Keep executing the block while the condition is true.
+do {
+     // execute this block
+} while(condition);
+
+
+
+4. for...of loop
+-Mostly used with iterable objects like arrays, maps.
+
+for(const x of iterable){
+    // code block to execute
+}
+
+const myGarage = ['BMW', 'Tesla', 'Toyota'];
+
+for(const car of myGarage){
+    console.log(car);
+}
+
+// Count the cars that has 'a' as letter in the name of the car 
+
+let countA = 0;
+
+for(const car of myGarage){
+    if( car.includes('a') ) countA++;
+}
+
+console.log(`The count of the cars that has 'a' as letter in the name is ${countA}.`);
+
+
+
+5. for...in loop
+-Specifically used for objects.
+-We will learn it
+
+
+
+Infinite loop: A loop that never stops because of a logical mistake. Basically, your termination point is never reached.
+
+let i = 1;
+
+while(true) {
+    if(i % 5 === 0) continue;
+    else console.log(i);
+
+    if(i === 100) break;
+    i++;
+}
+1
+2
+3
+4
+6
+7
+8
+9
+11
+
+
+
+Loop constrol statements:
+break;
+continue;
+
+
+
+Nested loops:
+for(let i = 1; i <= 3; i++){
+    console.log(i);
+    for(let j = 1; j <= 5; j++){
+        console.log(i);
+    }
+}
+
+1
+2
+3
+
+
+for(let i = 1; i <= 5; i++){
+    console.log(i);
+}
+
+1
+2
+3
+4
+5
+
+
+
+
+Object:
+let name = 'Bali';
+let age = 20;
+let address = 'IL';
+
+const person = {
+    name: 'Bali',
+    age: 20,
+    address: 'IL',
+    speak: function() {
+        return 'Bali speaks English and Albanian'
+    },
+    hobbies: ['Soccer', 'Coding']
+}
+
+
+const students = [
+    {
+        name: 'Bali',
+        age: 20,
+        address: 'IL',
+        speak: function() {
+            return 'Bali speaks English and Albanian'
+        },
+        hobbies: ['Soccer', 'Coding']
+    },
+        {
+        name: 'Igor',
+        age: 21,
+        address: 'IL',
+        speak: function() {
+            return 'Igor speaks English and Russian'
+        },
+        hobbies: ['Sleeping', 'Coding']
+    }
+]
+
+students[1]['hobbies'][1]; // Coding

@@ -1,0 +1,65 @@
+
+
+
+08-26-2023 JS Loops-Arrays
+
+Loops: 
+
+
+1. For Loop
+for(let i = 0; i < 10; i++){
+    console.log(i);
+}
+
+
+2. While Loop
+3. Do-while Loop 
+4. For...of Loop
+5. For..in Loop
+
+
+Infinite loop: That is a loop never stops due to a logical mistake and termination point is never met.
+
+for(; ;){
+    // Infinite loop
+}
+
+
+
+i % 3 === 0 && i % 5 === 0              =>              i % 15 === 0
+
+
+2. while loop
+The while loop loops through a block of code as long as a specified condition is true.
+You can do any task you did with for loop using while loop.
+
+Syntax:
+
+while(condition){
+    // code block to execute
+}
+
+
+While vs For loops
+For loop is used to execute a block of code and preferred when we know the exact number of iterations.
+While loop is used to execute a block of based on a condition and total number of iteration is not certain (dynamic).
+While loop can be used instead of for loop and visa versa
+
+3. Do-While loop
+The do-while loop is a variant of the while loop. 
+This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+Syntax:
+
+do {
+   // code block to execute 
+}
+while(condition);
+
+4. For-of loop
+The for of loop is used to loop through the values of an iterable object such as Arrays, Strings, Maps and more.
+
+Syntax:
+for(variable of iterable) {
+    // code block to execute 
+}

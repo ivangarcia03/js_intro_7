@@ -1,0 +1,53 @@
+
+
+08-28-2023 JS Objects Intro
+
+Real-life objects: Car, Phone, Computer, House, Tshirt
+
+-We can convert any real life into programming objects - JavaScript 
+
+Car is an object and it has some characteristics
+
+color   red 
+body    SUV
+year    2023
+make    BMW 
+model   X7
+hasAC  true 
+
+
+const car = {
+    color : 'red',
+    year : 2023,
+    make : 'BMW',
+    model : 'X7',
+    body : 'SUV',
+    hasAC : true
+};
+
+car.body; // SUV 
+car.brand; // undefined
+car.color; // 
+
+
+const student = {
+    firstName : 'John',
+    lastName : 'Doe',
+    age : 40,
+    batch : 7,
+    program : 'Software Testing'
+    passedFirstMock : true
+};
+
+OBJECT is a collection of properties. 
+PROPERTY is a key-value pair of an object
+EXAMPLE/ firstName : 'John'
+
+KEY = firstName
+VALUE = 'John'
+
+
+Object - pre-built methods
+Object.keys(obj)    -> it takes the object as an argument and returns all the keys as an array 
+Object.values(obj) -> it takes the object as an argument and returns all the values as an array
+Object.entries(obj) ->  it takes the object as an argument and returns all the key-value pairs as a nested array

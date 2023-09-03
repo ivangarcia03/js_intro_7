@@ -1,0 +1,44 @@
+
+
+08-29-2023 JS Objects
+
+RECAP:
+-Object in JS is a collection key-value pairs (property) (entry)
+-We can create object either using object literal { } or object constructor which is new Object()
+
+const obj1 = {}; // empty object
+const obj2 = new Object(); // empty object
+
+
+obj1.first_name = 'John';
+obj1['last_name'] = 'Doe';
+
+const obj3 = {
+    first_name: 'Alex',
+    last_name: 'Smith',
+    age: 45
+};
+
+obj3.first_name = 'Alexander';
+
+delete obj3.age;
+
+
+obj3.todo = ['laundry', 'cleaning', 'studying'];
+
+obj3.address = {
+    street: '123 Abc St',
+    city: 'Chicago',
+    state: 'IL',
+    zip: 12345
+};
+
+
+const arr1 = []; // empty array
+const arr2 = new Array(); // empty array
+
+arr1.push('Rome');
+arr1.push('Brugge');
+
+arr2.push('Mouse');
+arr2.push('Keyboard');

@@ -1,0 +1,95 @@
+
+
+
+09-02-2023 JS Arrays callback functions
+
+Arrays functions
+push()
+pop()
+indexOf()
+lastIndexOf()
+shift()
+unshift()
+includes()
+slice()
+splice()
+reverse()
+sort()
+concat()
+join()
+toString()
+flat()
+
+
+const numbers = [7, 2, 8, 4, 5];
+
+7
+2
+8
+4
+5
+
+for(let i = 0; i < numbers.length; i++){
+    console.log(numbers[i]);
+}
+
+for(const number of numbers) {
+    console.log(number);
+}
+
+
+// Most regular - primitive way of creating fucntions
+function sum(a, b) {
+    returns a + b;
+}
+
+sum(5, 3); // 8
+
+// Function expression: creating a fucntion as a variable
+const sum = function (a, b) {
+    return a + b;
+};
+
+sum(3, 6); // 9
+
+// Arrow functions
+const sum = (a, b) => a + b;
+
+
+sum(7, 10); // 17
+
+
+
+FUNCTION EXPRESSIONS
+-A function is a block of code that performs a specific task.
+-A JavaScript function can also be defined using an expression and this expression can be stored in a variable.
+-Functions are also JavaScript objects even though the typeof operator in JavaScript returns "function" for functions.
+Example:
+const variable = function () {
+    // code to be executed
+}
+
+-The function above is actually an anonymous function (a function without a name).
+-Functions stored in variables do not need function names. They can be invoked (called) using the variable name.
+
+
+ARROW FUNCTIONS 
+-JavaScript arrow functions allows a short syntax for writing function expressions.
+-We don't need the function keyword, the return keyword, and the curly brackets.
+-Using const is safer and preferred, because a function expression is always constant value.
+-We can only omit the return keyword and the curly brackets if the function body has a single statement.
+-We can skip the parentheses if we have only one parameter.
+
+
+callback function: is a function passed as an argument to another function 
+
+forEach()
+map()
+filter()
+
+
+find()
+findIndex()
+some()
+every()
+reduce()

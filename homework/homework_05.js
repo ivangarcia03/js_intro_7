@@ -226,5 +226,30 @@ console.log("\n-----------------------------\n");
 
 
 // Task- 14 not able to solve this code
+
+// I do not undestand task-14
+
 // Task- 15 not able to solve this code
 
+// Not able to solve this code
+
+function isPasswordValid(str){
+    
+    for(let i = 0; i < str.length; i++){
+        if((str.length > 7 && str.length < 17) && 
+        ('A' <= str[i] && str[i] <= 'Z') && 
+        ('a' <= str[i] && str[i] <= 'z')) return true;
+        else return false
+    }
+
+
+}
+
+console.log(isPasswordValid(""));
+console.log(isPasswordValid("abcd"));
+console.log(isPasswordValid("abcd1234"));
+console.log(isPasswordValid("Abcd1234"));
+console.log(isPasswordValid("Chicago12345US!#$%"));
+console.log(isPasswordValid("Abcd1234$"));
+console.log(isPasswordValid("Chicago123$"));
+console.log(isPasswordValid("Test1234#"));

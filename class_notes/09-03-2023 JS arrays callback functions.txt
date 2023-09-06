@@ -1,0 +1,135 @@
+
+
+09-03-2023 JS Arrays callback functions
+
+RECAP:
+Function: is a block of code can be used run a specific task 
+{}  -> block 
+
+Syntax:
+function funcName() {
+    // block
+}
+
+
+Function expression: Functions are considered to be objects. 
+
+const funcName = function () {
+    // block
+}
+
+Anonymous function: this is the function with no name.
+
+Arrow function: You can simplify-shorten your function syntax using arrow functions. 
+const functName = () => {
+    // block
+}
+
+function multiply5(x) {
+    return x * 5;
+}
+
+const multiply5 = function (x) {
+    return x * 5;
+}
+
+const multiply5 = x => x * 5;
+multiply5(3); // 15
+
+
+Callback function: These are function called in another functions as an argument
+const numbers = [1, 2, 3];
+
+numbers.map(x => x * 5); // [5, 10, 15]
+
+
+
+Array - callback functions
+1. forEach() - executes a provided function once for each array element.
+It will not change the original array.
+
+const numbers = [1, 2, 3];
+
+numbers.forEach(x => console.log(x));
+/*
+5
+10
+15
+*/
+
+
+2. map() - creates a new array populated with the results of calling a provided function on every element in the 
+calling array.
+The map() creates a new array by performing a function on each array element.
+It does not execute the function for array elements without values.
+It does not change the original array.
+
+map odd numbers as false and even numbers as true [false, true, false]
+
+const numbers = [1, 2, 3];
+
+const newArr = numbers.map(x => x % 2 === 0);
+
+console.log(numbers); // [1, 2, 3]
+console.log(newArr); // [ false, true, false ]
+
+
+3. filter() - creates a copy of a portion of a given array, filtered down to just the elements from the given 
+array that pass the test implemented by the provided function.
+Simply, the filter() creates a new array with array elements that pass a test.
+It does not change the original array.
+
+const numbers = [1, 2, 3, 6, 8, 15];
+
+const evenNumbers = numbers.filter(x => x % 2 === 0);
+const numbersDivisible3 = numbers.filter(x => x % 3 === 0);
+
+
+const names = [ 'yuliia', 'Igor', 'ABDULLAH', 'aLEX' ];
+
+names.map(name => name[0].toUppercase() + name.slice(1).toLowercase()).filter(name => name[0] === 'A'); // [ 'Abdullah', 'Alex']
+
+
+const names = [ 'John', 'Alex', 'Max' ];
+
+Object.keys(names); // [0, 1, 2]
+Object.values(names); // [ 'John', 'Alex', 'Max' ]
+Object.entries(names); // [ [0, 'John'], [1, 'Alex'], [2, 'Max'] ]
+
+function sum(a, b){
+    return a + b;
+}
+
+
+4. find() - returns the first element in the provided array that satisfies the provided testing function. 
+If no values satisfy the testing function, undefined is returned.
+It does not change the original array.
+
+5. findIndex() - returns the index of the first element in an array that satisfies the provided testing function. 
+If no elements satisfy the testing function, -1 is returned.
+It does not change the original array.
+
+6. some() - tests whether at least one element in the array passes the test implemented by the provided function. 
+It returns true if, in the array, it finds an element for which the provided function returns true.
+Otherwise, it returns false. It doesn't modify the array.
+Simply, the some() checks if some array values pass a test.
+It does not change the original array.
+
+
+7. every() - tests whether all elements in the array pass the test implemented by the provided function. 
+It returns a boolean value.
+Simply, the every() method checks if all array values pass a test.
+
+
+8. reduce() - executes a user-supplied "reducer" callback function on each element of the array, in order, 
+passing in the return value from the calculation on the preceding element. 
+-The final result of running the reducer across all elements of the array is a single value.
+-The first time that the callback is run there is no "return value of the previous calculation". 
+If supplied, an initial value may be used in its place. 
+-Otherwise the array element at index 0 is used as the initial value and iteration starts from the next element (index 1 instead of index 0).
+
+Simply, the reduce() runs a function on each array element to produce (reduce it to) a single value.
+It works from left-to-right in the array.
+It does not reduce the original array.
+
+reduceRight() – similar to reduce() but works from right-to-left.

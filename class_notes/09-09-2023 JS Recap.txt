@@ -1,0 +1,54 @@
+We can extract a callback function from builtin array methods
+
+numbers.forEach(logItems);
+
+function logItems(items) {
+  console.log(items)
+}
+
+Difference between method and function
+Look at left side and check if there is a dot exists of not.
+
+numbers.forEach // method
+const myFunction = () => {};
+myFunction(); // function
+
+Table elements => table, tbody, thead, tfoot, tr, th, td
+
+<table>
+  <thead>
+    <tr>
+    Students table
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <tr>
+    <td>Alex</td>
+  </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+    <td>
+      Copyright 2023
+    </td>
+    </tr>
+  </tfoot>
+</table>
+
+How to create unordered and ordered lists?
+<p>Fruits i like</p>
+<ul>
+  <li>Banana</li>
+  <li>Kiwi</li>
+  <li>Apple</li>
+</ul>
+
+<p>Fruits i like</p>
+<ol>
+  <li>Banana</li>
+  <li>Kiwi</li>
+  <li>Apple</li>
+</ol>

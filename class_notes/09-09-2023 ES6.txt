@@ -1,0 +1,9 @@
+ES6
+
+In simple words ES6 is just a version of javascript
+ES6 = ECMAScript2015 or ES2015
+
+1. let and const
+
+Primitive data types can not be reassigned when declared with const keyword
+But non-primitive data types (object, arrays) can be reassigned (values can be changed) with const keyword

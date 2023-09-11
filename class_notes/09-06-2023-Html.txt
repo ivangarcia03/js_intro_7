@@ -1,0 +1,24 @@
+HTML: It's a language we use to display everything we see on a web browser.
+TAGS: `<tagName>content</tagName>`
+    - doctype
+    - html
+    - head (title, meta)
+    - body
+    - img
+    - p
+    - br
+    - hr
+    - heading (h1 - h6)
+    - strong / b
+    - em / i
+    - mark (highlight)
+
+ATTRIBUTES: 
+    - <img>: src is a mandatory attribute, because we need the resource of the image 
+    - <a>: href
+    - style this is an optional attr to give styling.
+
+STYLING:
+    - Inline -> by using the style attribute inside HTML elements
+    - Internal -> by using a <style> element in the <head> section
+    - External -> by using a <link> element to link to an external CSS file

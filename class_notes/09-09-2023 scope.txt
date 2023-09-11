@@ -1,0 +1,10 @@
+Scope
+
+1. Global Scope -> accessible everywhere
+2. Local Scope -> limited accessibility
+    a. Function Scope   
+    b. Block Scope
+
+
+var keyword respects function scope but not block scope
+let and const respects both function and block scope

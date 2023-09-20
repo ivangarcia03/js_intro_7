@@ -1,0 +1,18 @@
+this keyword
+
+JavaScript is a functional programming language
+this keyword is a key to know where(which lexical context) your function is called
+
+function printName(name) {
+    console.log(name);
+}
+
+printName() // this = window
+
+But if you want to change the value of this, meaning function invokation place(context)
+Use either of these:
+1. call (pass arguments one by one)
+2. apply (pass array of argument all together)
+3. bind ()
+
+Arrow functions doesn't have its own "this" and it always look from parent

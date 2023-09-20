@@ -1,0 +1,4 @@
+
+By default javascript primitive data types are immutable.
+
+Non-primitive data type are mutable.

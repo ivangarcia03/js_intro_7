@@ -1,0 +1,14 @@
+
+=== vs ==
+
+!== vs !=
+
+Always prefer === and !== over == vs !=
+
+To check if variable is not a number: typeof, isNaN
+
+Nullish coalescing operator ?? => Shortcut to check if val is null or undefined and provide fallback value
+
+console variations: log, warn, error, time, timeEnd
+
+Make sure to create functions as pure as possible without side effects.

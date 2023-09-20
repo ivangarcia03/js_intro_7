@@ -1,0 +1,27 @@
+DOM - DOCUMENT OBJECT MODEL
+
+window object
+    Lets see what is window object when we run code runner?
+    console.log(window); // ReferenceError: window is not defined
+    Because we are running our code in NodeJS environment
+
+    console.log(window); // Window object
+    Because we are running javascript code on the browser(client)
+
+
+alert() - method
+
+prompt() - method
+    1. null - if you cancel it
+    2. string value that user inputs to the prompt
+
+
+confirm() - method
+    1. true - if you pressed OK
+    2. false - if you pressed CANCEL
+
+localStorage
+    We can store [key value] paired data.
+    Your data will live in localStorage indefinitely
+    When storing object and array we have to use JSON.stringify() to convert to string and JSON.parse() convert from string
+    To remove item from localStorage use => localStorage.removeItem(name)

@@ -1,0 +1,34 @@
+
+Synchronous Tasks vs Asynchronous Tasks
+
+setTimeout() -> function that can help us to delay a task
+
+
+callback -> its a function that gets passed to another function as an argument
+
+Callback hell occurs when you have multiple nested callbacks within callbacks, 
+this leads to code being hard to understand and prone to errors.
+
+How to handle async code in javascript?
+1. Callbacks
+2. Promises
+3. Async/await
+
+
+Promise 
+
+Makes working with asynchronous code even easier than callbacks
+Its just object
+This object has 3 states:
+    1. Fullfilled -> success
+    2. Pending -> pending
+    3. Rejected -> fail
+
+
+When you resolve the promise use: then and catch 
+then() => when promise is Fullfilled
+catch() => when promise is failed
+
+
+Async await Error Handling
+    - use try catch block

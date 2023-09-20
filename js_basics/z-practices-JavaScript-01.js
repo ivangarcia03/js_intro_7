@@ -1,10 +1,16 @@
-var numbers = [1, 2, 3];
 
-let sum= 0;
-numbers.forEach((n) => sum+=n);
-
-numbers.forEach((numbers, index) => console.log((index)));
-numbers.forEacth((number, index) => console.log("Index is"));
-
-let formattedPerson = JSON.stringify(person);
-console.log(formattedPerson);
+function categorizeCharacters(str){
+    let letters = [];
+    let numbers = [];
+    let symbols = [];
+    for(let i = 0; i < str.length; i++){
+      if(str[i].match(/[a-z]/)) letters.push(str[i]);
+      else if(str[i].match(/[0-9]/)) numbers.push(str[i])
+      else symbols.push(str[i]);
+    }
+    let results = [letters.join(""), numbers.join(""), symbols.join("")];
+    return results
+  }
+  console.log(categorizeCharacters("1234"));
+  console.log(categorizeCharacters("abc123$#%"));
+  console.log(categorizeCharacters("12ab$%3c%"));

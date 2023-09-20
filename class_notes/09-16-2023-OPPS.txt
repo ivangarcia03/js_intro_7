@@ -1,0 +1,51 @@
+OOP
+
+Everything around object
+
+Prototypical Inheritance can be implemented in 3 ways in JS:
+1. Constructor functions
+2. Classes
+3. Object create (not a best solution in terms of intuitiveness)
+
+Getters and Setters: https://www.programiz.com/javascript/getter-setter
+
+
+Classes can have:
+- Constructor
+- static or private properties
+
+Inheritance
+"Constructor functions" and use prototype to achieve inheritence
+"Classes" can use extends keyword and super function to achieve inheritence
+
+
+09-17-2023 Class Recap -----------------
+
+3 Ways to achieve OOP in javascript
+
+1. Constructor Function
+    function Person() {} => const student = new Person();
+    Person.prototype (attach methods, properties)
+
+2. Class
+    class Person {} => const person = new Person();
+    Class body
+    
+3. Object.create();
+
+
+Inhertience
+    1. function Child() { Person.call(this, ....) }
+    2. Class we use extends keyword => Child extends Person
+    3. Look it up
+
+
+Private or Static keywords and Getter/Setter in Class can help achieve us Encapsulation
+Polymorphism => Parent (getDetails()) => Child (getDetails => modify)
+
+
+
+Character => class or function
+
+    - variables: name, profession, gender, agem strenght, hitpoints, printStats
+    - methods: isAlive(), Attack(), LevelUp()

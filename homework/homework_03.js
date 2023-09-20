@@ -140,9 +140,9 @@ function swapFirstLastWorld(sentence){
     else return (" ")
 }
 
-console.log(swapFirstLastWorld("Hello World"));
-console.log(swapFirstLastWorld("I like JavaScript"));
-console.log(swapFirstLastWorld("foo bar foo bar"));
+console.log(swapFirstLastWorld("Hello World")); // World Hello
+console.log(swapFirstLastWorld("I like JavaScript")); // JavaScript like I
+console.log(swapFirstLastWorld("foo bar foo bar")); // bar bar foo foo
 console.log(swapFirstLastWorld(""));
 console.log(swapFirstLastWorld(" "));
 console.log(swapFirstLastWorld("Hello"));

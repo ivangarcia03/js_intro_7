@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            list-style: none;
+            padding: 10px;
+            background-color: lightblue;
+            border-radius: 5px;
+            max-width: 200px;
+            margin: 20px auto;
+        }
+
+        li {
+            padding: 5px;
+            font-size: 28px;
+            border-bottom: 1px solid;
+        }
+
+        li:last-child {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        /*
+        Acitvity Objective: Practice simple DOM   
+        Instructions: Create a simple TODO List
+
+        1. Ask user a list -> prompt()
+        2. Create an element based on users input -> createElement()
+        3. Show that in the DOM(UI) -> append() or appendChild()
+        Bonus: Ask 3 lists from user
+        */
+        const bodyEl = document.querySelector('body');
+
+        const addTodo = (text) => {
+            // Create li item
+            const liEl = document.createElement('li');
+            // Append user text to liEl
+            liEl.textContent = text;
+            // Append liEl inside ulEl
+            ulEl.append(liEl);
+            // Append ulEl inside bodyEl
+            bodyEl.append(ulEl);
+        }
+        // Create ul 
+        const ulEl = document.createElement('ul');
+    
+        for (let i = 0; i < 3; i++) {
+            const userTodoList = prompt('Enter your todo list');
+            // Apend to body
+            addTodo(userTodoList);
+        }
+    </script>
+</body>
+
+</html>

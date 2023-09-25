@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+        }
+        form, input {
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM events</h1>
+
+
+    <!-- <button id="clickBtn" onclick="logClick()">Click Button</button> -->
+    <button id="clickBtn">Click Button</button>
+    <button id="dblclickBtn">Double Click Button</button>
+    <button id="mousedownBtn"> Mousedown Button</button>
+    <button id="mouseUpBtn"> Mouseup Button</button>
+    <button id="mouseMoveBtn"> Mousemove Button</button>
+    <button id="mouseOutBtn"> Mouseout Button</button>
+
+
+
+    <!-- form start -->
+    <form>
+        <input type="text" id="changeInput" placeholder="Change"/>
+        <input type="text" id="inputInput" placeholder="Input"/>
+        <input type="text" id="formInput" placeholder="Focus and Blur"/>
+        <!-- <button type="submit">Submit</button> -->
+    </form>
+    <!-- form end -->
+
+    <div id="box" style="height: 1500px; width: 1500px; background-color: aliceblue; padding: 10px;">
+        BOX
+    </div>
+    <script src="dom4.js"></script>
+
+    <script>
+        // Check for above commented example
+        function logClick() {
+            console.log('clicked');
+        }
+    </script>
+</body>
+
+</html>

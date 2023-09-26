@@ -1,0 +1,31 @@
+Modules
+
+
+Without modules the order of javascript files is very important
+Example: putting main.js before math.js will fail.
+
+Goal is to have only one entry point to my project
+
+1 html -> 1 js file
+
+1 js file -> may have many dependcies
+
+
+COMMONJS  ------
+
+In order to use CommonJS syntax (modules.exports, require) in the browser
+we have to use some libraries such as require.js, browserify (webpack, babel)
+
+Does NodeJS support CommonJS syntax? - Yes
+Node enviorment supports CommonJS syntax by default.
+No need to use any external library
+
+
+Export/Import ES6 Syntax ----
+1. Named export and import (Multiple export imports allowed in single file/module. You should import with the exact name)
+2. Default export (only 1 default export is allowed in a file/module)
+3. Rename exports when importing them using `as` keyword: import {add as dateAdd} from '';
+4. Aggregation
+
+Difference regular js vs modules
+- 

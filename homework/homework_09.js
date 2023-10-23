@@ -152,7 +152,7 @@ function countOccurrencesOfCharacters(str){
     let count = 1;
 
     for(let i = 0; i < tempArr.length; i++){
-        if(tempArr[i] === tempArr[i] + 1){
+        if(tempArr[i] === tempArr[i + 1]){
             count++
         } 
         else{
@@ -190,6 +190,8 @@ fibonacciSeries1(2) 	-> [0, 1]
 
 
 */
+
+// Task - 06
 
 const fibonacciSeries1 = (num) => {
     let fibonacci = [0, 1];

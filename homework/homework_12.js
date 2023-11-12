@@ -12,10 +12,12 @@ makeNegative(0.45)   	-> -0.45
 */
 
 // Task-01
+
 const makeNegative = (num) => {
     if (num > 0) return - num;
     else return num;
 }
+
 console.log(makeNegative(10)); //       -> -10
 console.log(makeNegative(-7)); //      -> -7
 console.log(makeNegative(0)); //        -> 0
@@ -148,6 +150,8 @@ const findLongestWord = (str) => {
     }
     return longestWord;
 }
+
+
 console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); //  -> "jumped"
 console.log(findLongestWord("This is a sample string for testing")); //  ->"testing"
 console.log(findLongestWord("One two ten")); //  -> "One"

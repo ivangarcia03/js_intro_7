@@ -100,6 +100,9 @@ isArraySumEvenOrOdd( [ 0,0 ] ) 	->  "even"
 isArraySumEvenOrOdd( [ 1,1,1,1,1 ] )   ->  "odd”
 
 */
+
+// Task-04
+
 function isArraySumEvenOrOdd(array){
     let sum = 0;
     for(let i = 0; i < array.length; i++){
@@ -129,6 +132,9 @@ reverse("") 			-> ""
 reverse("Apples 456") 		-> "654 selppA"
 
 */
+
+// Tark-05
+
 const reverse = (str) => {
    return str.split("").reverse().join("")
 }

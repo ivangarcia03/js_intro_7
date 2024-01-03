@@ -19,7 +19,7 @@ function toCamelCase(inputString){
 
 if(!inputString.includes(" ")) return inputString
 
- let words = inputString.trim().split(/\s+/);
+ let words = inputString.trim().split(" ");
  let Camel = words[0].toLowerCase();
 
  for(let i = 1; i < words.length; i++){

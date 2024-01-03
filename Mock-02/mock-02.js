@@ -1195,3 +1195,36 @@ console.log(arrFactorial([1, 2, 3 ,4])); // -> [1, 2, 6, 24]
 console.log(arrFactorial([0, 5])); // -> [1,120]
 console.log(arrFactorial([5 , 0, 6])); // -> [120, 1, 720]
 console.log(arrFactorial([])); //-> []
+
+/*
+Requirement:
+Write a function named calculateFactorial() which takes a number as an 
+argument and returns the factorial of that number.
+Note: Factorial is the product of all positive integers less than or equal to a 
+given positive integer and denoted by that integer and an exclamation point. 
+Thus, factorial seven is written 7!, meaning 1 × 2 × 3 × 4 × 5 × 6 × 7. Factorial 
+zero is defined as equal to 1.
+calculateFactorial(0)  -> 1
+calculateFactorial(1)  -> 1
+calculateFactorial(5)  -> 120
+calculateFactorial(6)  -> 720
+calculateFactorial(10)  -> 3628800
+calculateFactorial(4)  -> 24
+
+
+*/
+
+// Task-02
+function calculateFactorial(num){
+    let factorial = 1
+    for(let i = 1; i <= num; i++){
+      factorial = factorial * i;
+    }
+    return factorial
+  }
+  console.log(calculateFactorial(0)); // 	-> 1
+  console.log(calculateFactorial(1)); // 	-> 1
+  console.log(calculateFactorial(5)); // 	-> 120
+  console.log(calculateFactorial(6)); // 	-> 720
+  console.log(calculateFactorial(10)); // 	-> 3628800
+  console.log(calculateFactorial(4)); // 	-> 24

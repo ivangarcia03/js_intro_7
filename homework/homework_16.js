@@ -14,13 +14,8 @@ toInitials( "Ja Le") 	-> "J. L."
 */
 //Task-01
 function toInitials(str){
-    let words = str.trim().split(" ");
-    let capitalWords = words.map(name => name.charAt(0).toUpperCase());
-
-    return capitalWords.join('. ') + '.';
+    return str.split(" ").map(name => name[0].toUpperCase() + '.').join(" ")
 }
-
-
 
 
 console.log(toInitials( "Joe Doe")); // 	-> "J. D."

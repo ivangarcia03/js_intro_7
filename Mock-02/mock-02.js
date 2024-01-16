@@ -1157,7 +1157,7 @@ function sumOfDigits(str){
 
 
 console.log(sumOfDigits("Javascript")); // -> 0
-console.log(sumOfDigits("John’s age is 29")); // -> 11
+console.log(sumOfDigits("John's age is 29")); // -> 11
 console.log(sumOfDigits("$125.0")); // -> 8
 console.log(sumOfDigits("")); // -> 0
 
